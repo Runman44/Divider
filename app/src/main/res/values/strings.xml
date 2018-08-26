@@ -12,4 +12,5 @@
     <string name="linearlayout_vertical_all_padding">LinearLayout Vertical All - Padding</string>
     <string name="linearlayout_vertical">LinearLayout Vertical</string>
     <string name="linearlayout_horizontal_padding">LinearLayout Horizontal - Padding</string>
+    <string name="linearlayout_horizontal_none">LinearLayout Horizontal - None</string>
 </resources>
