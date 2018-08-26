@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/main_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/linearlayout_dividers"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/divider_horizontal_none_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="LinearLayout Horizontal - None"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_label" />
+
+        <LinearLayout
+            android:id="@+id/divider_horizontal_none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:divider="@drawable/divider"
+            android:orientation="horizontal"
+            android:showDividers="none"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_horizontal_none_label">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.1"
+                android:background="#ff0008"
+                android:gravity="center"
+                android:text="@string/block1"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.1"
+                android:background="#00F"
+                android:gravity="center"
+                android:text="@string/block2"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.1"
+                android:background="#00ff08"
+                android:gravity="center"
+                android:text="@string/block3"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/divider_horizontal_middle_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/linearlayout_horizontal_middle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_horizontal_none" />
+
+        <LinearLayout
+            android:id="@+id/divider_horizontal_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:divider="@drawable/divider"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_horizontal_middle_label">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.1"
+                android:background="#ff0008"
+                android:gravity="center"
+                android:text="@string/block1"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.1"
+                android:background="#00F"
+                android:gravity="center"
+                android:text="@string/block2"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.1"
+                android:background="#00ff08"
+                android:gravity="center"
+                android:text="@string/block3"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/divider_horizontal_beginning_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/linearlayout_horizontal_beginning"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_horizontal_middle" />
+
+        <LinearLayout
+            android:id="@+id/divider_horizontal_beginning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:divider="@drawable/divider"
+            android:orientation="horizontal"
+            android:showDividers="beginning"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_horizontal_beginning_label">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.1"
+                android:background="#ff0008"
+                android:gravity="center"
+                android:text="@string/block1"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.1"
+                android:background="#00F"
+                android:gravity="center"
+                android:text="@string/block2"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.1"
+                android:background="#00ff08"
+                android:gravity="center"
+                android:text="@string/block3"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/divider_horizontal_end_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/linearlayout_horizontal_end"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_horizontal_beginning" />
+
+        <LinearLayout
+            android:id="@+id/divider_horizontal_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:divider="@drawable/divider"
+            android:orientation="horizontal"
+            android:showDividers="end"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_horizontal_end_label">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.1"
+                android:background="#ff0008"
+                android:gravity="center"
+                android:text="@string/block1"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.1"
+                android:background="#00F"
+                android:gravity="center"
+                android:text="@string/block2"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.1"
+                android:background="#00ff08"
+                android:gravity="center"
+                android:text="@string/block3"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/divider_horizontal_all_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/linearlayout_horizontal_all"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_horizontal_end" />
+
+        <LinearLayout
+            android:id="@+id/divider_horizontal_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:divider="@drawable/divider"
+            android:orientation="horizontal"
+            android:showDividers="beginning|middle|end"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_horizontal_all_label">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.1"
+                android:background="#ff0008"
+                android:gravity="center"
+                android:text="@string/block1"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.1"
+                android:background="#00F"
+                android:gravity="center"
+                android:text="@string/block2"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.1"
+                android:background="#00ff08"
+                android:gravity="center"
+                android:text="@string/block3"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/divider_horizontal_padding_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/linearlayout_horizontal_padding"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_horizontal_all" />
+
+        <LinearLayout
+            android:id="@+id/divider_horizontal_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:divider="@drawable/divider"
+            android:dividerPadding="15dp"
+            android:orientation="horizontal"
+            android:showDividers="beginning|middle|end"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_horizontal_padding_label">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.1"
+                android:background="#ff0008"
+                android:gravity="center"
+                android:text="@string/block1"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.1"
+                android:background="#00F"
+                android:gravity="center"
+                android:text="@string/block2"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.1"
+                android:background="#00ff08"
+                android:gravity="center"
+                android:text="@string/block3"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/divider_vertical_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/linearlayout_vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_horizontal_padding" />
+
+        <LinearLayout
+            android:id="@+id/divider_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:divider="@drawable/divider"
+            android:orientation="vertical"
+            android:showDividers="middle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_vertical_label">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ff0008"
+                android:gravity="center"
+                android:text="@string/block1"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00F"
+                android:gravity="center"
+                android:text="@string/block2"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00ff08"
+                android:gravity="center"
+                android:text="@string/block3"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/divider_old_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/dividers_old_way"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_vertical" />
+
+        <LinearLayout
+            android:id="@+id/divider_old"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_old_label">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ff0008"
+                android:gravity="center"
+                android:text="@string/block1"
+                android:textColor="#FFFFFF" />
+
+            <include layout="@layout/divider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00F"
+                android:gravity="center"
+                android:text="@string/block2"
+                android:textColor="#FFFFFF" />
+
+            <include layout="@layout/divider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00ff08"
+                android:gravity="center"
+                android:text="@string/block3"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
