@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Divider</string>
+    <string name="block1">Block1</string>
+    <string name="block2">Block2</string>
+    <string name="block3">Block3</string>
+    <string name="linearlayout_horizontal_padding">LinearLayout Horizontal - Padding</string>
+    <string name="linearlayout_horizontal_all">LinearLayout Horizontal - All</string>
+    <string name="linearlayout_horizontal_end">LinearLayout Horizontal - End</string>
+    <string name="linearlayout_horizontal_beginning">LinearLayout Horizontal - Beginning</string>
+    <string name="linearlayout_horizontal_middle">LinearLayout Horizontal - Middle</string>
+    <string name="linearlayout_dividers">LinearLayout Dividers</string>
+</resources>
